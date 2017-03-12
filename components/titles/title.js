@@ -3,7 +3,9 @@ import React from 'react';
 class Title extends React.Component {
    render() {
       return (
-         <h1>{this.props.title}</h1>
+      	<div>
+	        <h2 className="">{this.props.title}</h2>
+        </div>
       );
    }
 }

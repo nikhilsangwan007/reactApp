@@ -1,0 +1,17 @@
+.profileBar {
+  background: black; }
+
+.profileImage {
+  border-radius: 999px;
+  cursor: pointer; }
+
+.profileName {
+  cursor: pointer; }
+
+.navBar {
+  background: black; }
+
+.navbarMenuList li:hover {
+  background: #16a085; }
+
+/*# sourceMappingURL=main.css.map */

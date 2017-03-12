@@ -1,0 +1,12 @@
+$black-color: black;
+$hover-color: #16a085;
+
+
+.navBar {
+	background: $black-color;
+}
+.navbarMenuList {
+	li:hover {
+		background: $hover-color;
+	}
+}

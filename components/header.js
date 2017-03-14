@@ -9,7 +9,7 @@ class Header extends React.Component {
 	      	<div>
       			<div className="uk-grid uk-light profileBar">
 	      			<div className="uk-width-1-2 uk-text-center uk-margin-small-top">
-		      			<img className="profileImage uk-margin-small-top" src="../lib/uikit/tests/images/avatar.jpg" width="200px" height="200px"/>
+		      			<img className="profileImage uk-margin-small-top" src="../lib/uikit/tests/images/avatar.jpg" width="150px" height="150px"/>
 		      		</div>
 		      		<div className="uk-width-1-2 uk-margin-medium-top uk-padding-remove">
 			        	<Title title={this.props.title}/>
@@ -23,6 +23,9 @@ class Header extends React.Component {
 			        		</li>
 			        		<li className="uk-active">	
 								<Link className="uk-text-bold" to="Extra">Extra</Link>
+							</li>
+							<li className="uk-active">	
+								<Link className="uk-text-bold" to="todo-list">Todos</Link>
 							</li>
 						</ul>
 					</div>	

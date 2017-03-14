@@ -14,4 +14,16 @@
 .navbarMenuList li:hover {
   background: #16a085; }
 
+.navBar {
+  background: black; }
+
+.navbarMenuList li:hover {
+  background: #16a085; }
+
+.footer {
+  background: black;
+  position: fixed;
+  bottom: 0;
+  width: 100%; }
+
 /*# sourceMappingURL=main.css.map */

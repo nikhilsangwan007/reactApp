@@ -4,7 +4,7 @@ export default class Extra extends React.Component {
 	render() {
 		return (
 			<div>
-				<h2>this is Extra page</h2>
+				<h3>I am an extra page ^_^</h3>
 			</div>
 		);
 	}

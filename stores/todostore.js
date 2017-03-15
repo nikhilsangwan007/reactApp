@@ -26,9 +26,6 @@ class TodoStore extends EventEmitter {
 
 	createTodo(task) {
 		const id = Date.now();
-
-		console.log(task);
-
 		this.todos.push({
 			id,
 			task,
@@ -38,12 +35,18 @@ class TodoStore extends EventEmitter {
 		this.emit("change");
 	}
 
+	deleteTodo(id) {
+		console.log(id);
+		this.todos.remove(task);
+
+		this.emit("change");
+	}
+
 	getAll() {
 		return this.todos;
 	}
 
 	handleAction(action) {
-		console.log(action);
 		switch(action.type) {
 			case "CREATE_TODO": {
 				this.createTodo(action.task);

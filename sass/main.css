@@ -1,32 +1,148 @@
+.navBar {
+  background: #1E88E5; }
+
+.navbarMenuList li:hover {
+  background: #1565C0; }
+
 .profileBar {
-  background: black; }
+  background: #1E88E5;
+  min-height: 40em; }
 
 .profileImage {
   border-radius: 999px;
   cursor: pointer; }
 
 .profileName {
-  cursor: pointer; }
+  cursor: pointer;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100; }
 
+.firstName {
+  font-size: 1em; }
+
+.lastName {
+  font-style: italic;
+  font-size: 1.5em; }
+
+.infoBox {
+  position: relative;
+  top: 10em; }
+
+.postClass {
+  font-size: 6em; }
+
+.tagLine {
+  color: white;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100; }
+
+@media only screen and (max-width: 1130px) {
+  .postClass {
+    font-size: 4em; } }
+@media only screen and (max-width: 600px) {
+  .postClass {
+    font-size: 2em; }
+
+  .tagLine {
+    font-size: 1em; }
+
+  .firstName {
+    font-size: 0.5em; }
+
+  .lastName {
+    font-style: italic;
+    font-size: 0.8em; } }
 .navBar {
-  background: black; }
+  background: #1E88E5; }
 
 .navbarMenuList li:hover {
-  background: #16a085; }
-
-.navBar {
-  background: black; }
-
-.navbarMenuList li:hover {
-  background: #16a085; }
-
-.footer {
-  background: black;
-  position: fixed;
-  bottom: 0;
-  width: 100%; }
+  background: #1565C0; }
 
 .todoList {
   list-style: none; }
+
+.navBar {
+  background: #1E88E5; }
+
+.navbarMenuList li:hover {
+  background: #1565C0; }
+
+.profileBar {
+  background: #1E88E5;
+  min-height: 40em; }
+
+.profileImage {
+  border-radius: 999px;
+  cursor: pointer; }
+
+.profileName {
+  cursor: pointer;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100; }
+
+.firstName {
+  font-size: 1em; }
+
+.lastName {
+  font-style: italic;
+  font-size: 1.5em; }
+
+.infoBox {
+  position: relative;
+  top: 10em; }
+
+.postClass {
+  font-size: 6em; }
+
+.tagLine {
+  color: white;
+  font-size: 1.5em;
+  font-style: italic;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 100; }
+
+@media only screen and (max-width: 1130px) {
+  .postClass {
+    font-size: 4em; } }
+@media only screen and (max-width: 600px) {
+  .postClass {
+    font-size: 2em; }
+
+  .tagLine {
+    font-size: 1em; }
+
+  .firstName {
+    font-size: 0.5em; }
+
+  .lastName {
+    font-style: italic;
+    font-size: 0.8em; } }
+.aboutContainer {
+  max-width: 95%; }
+
+.aboutBrand, .experienceTag, .workList {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
+  color: #1E88E5; }
+
+.aboutPara {
+  color: #58798c;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.workContainer {
+  background: #1E88E5;
+  min-height: 15em; }
+
+.workList {
+  color: white;
+  font-size: 2em;
+  border: 1px solid white;
+  border-radius: 5px;
+  list-style: none; }
+  .workList :hover {
+    background: #329cf9; }
 
 /*# sourceMappingURL=main.css.map */

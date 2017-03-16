@@ -1,0 +1,37 @@
+@import "profile";
+
+.aboutContainer {
+	max-width: 95%;
+}
+.aboutBrand {
+	font-family: $font-family;
+	font-weight: bold;
+	font-size: 2.5em;
+	color: $nav-color;
+}
+.aboutPara {
+	color: rgb(88, 121, 140);
+	font-family: $font-family;
+}
+.workContainer {
+	background: $nav-color;
+	min-height: 15em;
+}
+.experienceTag {
+	@extend .aboutBrand;
+}
+.workList {
+	@extend .aboutBrand;
+	color: white;
+	font-size: 2em;
+	border: 1px solid white;
+	border-radius: 5px;
+
+	:hover {
+		background: $nav-color + 20;
+	}
+
+
+		list-style: none;
+
+}

@@ -15,9 +15,6 @@ class Header extends React.Component {
 			        		<li className="uk-active">	
 								<Link className="uk-text-bold" to="Extra">Extra</Link>
 							</li>
-							<li className="uk-active">	
-								<Link className="uk-text-bold" to="todo-list">Todos</Link>
-							</li>
 						</ul>
 					</div>	
 				</nav>

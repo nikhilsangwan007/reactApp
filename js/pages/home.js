@@ -1,15 +1,52 @@
 import React from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
 
-export default class Home extends React.Component {
+class Home extends React.Component {
+
+	userDescription() {
+		return this.props.users.map((users) => {
+			return (<p key={users.id}>{users.description}</p>);
+		})
+	}
+	fullName() {
+		return this.props.users.map((users) => {
+			return (<span className="firstName" key={users.id}><span className="firstName">{users.first}</span> <strong className="lastName">{users.last}</strong></span>);
+		})
+	}
+	designation() {
+		return this.props.users.map((users) => {
+			return (<span key={users.id} className="postClass">{users.designation}</span>);
+		})
+	}
+	subtagLine() {
+		return this.props.users.map((users) => {
+			return (<span key={users.id} className="subtagLine">{users.subtagLine}</span>);
+		})
+	}
+	tagLine() {
+		return this.props.users.map((users) => {
+			return (<span key={users.id} className="tagLine">{users.tagLine}</span>);
+		})
+	}
+
 	render() {
 		return (
 			<div>
       			<div className="uk-light profileBar">
-	      			<h2 className="uk-animation-slide-top uk-margin-large-left uk-text-uppercase profileName"><span className="firstName">Nikhil</span><strong className="lastName">Sangwan</strong></h2>
+	      			<h2 className="uk-animation-slide-top uk-margin-large-left uk-text-uppercase profileName">
+	      				{this.fullName()}
+	      			</h2>
 			        <div className="uk-container uk-padding-remove uk-margin-large-left infoBox">
-			        	<h1 className="uk-text-uppercase uk-margin-medium uk-text-bold uk-animation-slide-bottom postClass">front end engineer</h1>
-			        	<p className="uk-text-uppercase uk-margin-medium uk-animation-slide-bottom subtagLine">once upon a time, html falls in love with css</p>
-			        	<p className="uk-text-uppercase uk-margin-medium uk-animation-slide-bottom tagLine">available for all type of frontend job oppurtunities</p>
+			        	<h1 className="uk-text-uppercase uk-margin-medium uk-text-bold uk-animation-slide-bottom">
+			        		{this.designation()}
+			        	</h1>
+			        	<p className="uk-text-uppercase uk-margin-medium uk-animation-slide-bottom subtagLine">
+			        		{this.subtagLine()}
+			        	</p>
+			        	<p className="uk-text-uppercase uk-margin-medium uk-animation-slide-bottom tagLine">
+			        		{this.tagLine()}
+			        	</p>
 			        </div>
 	        	</div>
 				<section className="uk-animation-slide-bottom">
@@ -18,9 +55,7 @@ export default class Home extends React.Component {
 						<div className="uk-container aboutContainer uk-text-center">
 							<div className="uk-text-large uk-margin-small-top uk-margin-small-bottom aboutBrand">ABOUT ME</div>
 							<div className="uk-container uk-text-large aboutPara">
-								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-									The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham
+								{this.userDescription()}
 							</div>
 						</div>
 					</div>
@@ -41,3 +76,11 @@ export default class Home extends React.Component {
 		);
 	}
 }
+
+function mapStateToProps(state) {
+	return {
+		users: state.users
+	};
+}
+
+export default connect(mapStateToProps)(Home);

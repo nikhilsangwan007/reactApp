@@ -26,10 +26,10 @@
 
 .infoBox {
   position: relative;
-  top: 10em; }
+  top: 6em; }
 
 .postClass {
-  font-size: 6em; }
+  font-size: 2em; }
 
 .tagLine {
   color: white;
@@ -40,28 +40,25 @@
 
 @media only screen and (max-width: 1130px) {
   .postClass {
-    font-size: 4em; } }
+    font-size: 2em; } }
 @media only screen and (max-width: 600px) {
   .postClass {
-    font-size: 2em; }
+    font-size: 1em; }
 
   .tagLine {
     font-size: 1em; }
 
   .firstName {
-    font-size: 0.5em; }
+    font-size: 0.8em; }
 
   .lastName {
     font-style: italic;
-    font-size: 0.8em; } }
+    font-size: 1.3em; } }
 .navBar {
   background: #1E88E5; }
 
 .navbarMenuList li:hover {
   background: #1565C0; }
-
-.todoList {
-  list-style: none; }
 
 .navBar {
   background: #1E88E5; }
@@ -91,10 +88,10 @@
 
 .infoBox {
   position: relative;
-  top: 10em; }
+  top: 6em; }
 
 .postClass {
-  font-size: 6em; }
+  font-size: 2em; }
 
 .tagLine {
   color: white;
@@ -105,20 +102,20 @@
 
 @media only screen and (max-width: 1130px) {
   .postClass {
-    font-size: 4em; } }
+    font-size: 2em; } }
 @media only screen and (max-width: 600px) {
   .postClass {
-    font-size: 2em; }
+    font-size: 1em; }
 
   .tagLine {
     font-size: 1em; }
 
   .firstName {
-    font-size: 0.5em; }
+    font-size: 0.8em; }
 
   .lastName {
     font-style: italic;
-    font-size: 0.8em; } }
+    font-size: 1.3em; } }
 .aboutContainer {
   max-width: 95%; }
 

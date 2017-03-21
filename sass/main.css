@@ -134,12 +134,18 @@
   min-height: 15em; }
 
 .workList {
-  color: white;
   font-size: 2em;
+  color: white;
   border: 1px solid white;
   border-radius: 5px;
   list-style: none; }
   .workList :hover {
-    background: #329cf9; }
+    cursor: pointer; }
+
+.workListContainer :hover {
+  background: #0151ac; }
+
+.skillContainer {
+  min-height: 15em; }
 
 /*# sourceMappingURL=main.css.map */

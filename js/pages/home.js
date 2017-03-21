@@ -29,7 +29,24 @@ class Home extends React.Component {
 			return (<span key={users.id} className="tagLine">{users.tagLine}</span>);
 		})
 	}
-
+	iterator(user, i) {
+				return (
+					<ul className="workList uk-margin-large-left uk-margin-large-right uk-margin-small-bottom" key={user.work[i].id}>
+						<li className="uk-text-xxlarge">{user.work[i].company}</li>
+						<li className="uk-text-small uk-text-uppercase uk-margin-small-bottom">{user.work[i].title}</li>
+						<li className="uk-text-small uk-text-uppercase"> description : {user.work[i].workDescription}</li>
+					</ul>
+				);
+	}
+	work() {
+		return this.props.users.map((user) => {
+			var data = new Array();
+			for(var i=0; i<user.work.length; i++) {
+				data[i] = this.iterator(user, i);
+			}
+			return data;
+		})
+	}
 	render() {
 		return (
 			<div>
@@ -60,16 +77,21 @@ class Home extends React.Component {
 						</div>
 					</div>
 					<div className="uk-light uk-animation-slide-bottom workContainer">
-							<div className="uk-grid data-uk-grid-collapse">
-								<div className="uk-width-1-4 uk-grid-small-1-4">
-									<h2 className="uk-text-uppercase uk-text-center uk-margin-large-top experienceTag">experience</h2>
-								</div>
-								<div className="uk-width-3-4 uk-grid-small-1-4 uk-margin-large-top uk-padding-remove">
-									<ol className="workList uk-margin-large-right">
-										<li>instaRefr.com</li>
-									</ol>
-								</div>
-							</div> 
+						<div className="uk-grid">
+							<div className="uk-width-small-1-2 uk-push-1-2">
+								<h2 className="uk-text-uppercase uk-text-center uk-text-truncate uk-margin-small-top experienceTag">experience</h2>
+							</div>
+							<div className="workListContainer uk-width-small-1-2 uk-pull-1-2 uk-margin-small-top uk-padding-remove">
+									{this.work()}
+							</div>
+						</div> 
+					</div>
+					<div className="skillContainer uk-animation-slide-bottom">
+						<div className="uk-grid">
+							<div className="uk-width-small-1-2 uk-push-1-2">
+								<h2 className="uk-text-uppercase uk-text-center uk-text-truncate uk-margin-small-top experienceTag">skills</h2>
+							</div>
+						</div>
 					</div>
 				</section>
 			</div>

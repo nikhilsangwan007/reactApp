@@ -19,19 +19,24 @@
 }
 .experienceTag {
 	@extend .aboutBrand;
+
 }
 .workList {
 	@extend .aboutBrand;
-	color: white;
 	font-size: 2em;
+	color: white;
 	border: 1px solid white;
 	border-radius: 5px;
-
+	list-style: none;
 	:hover {
-		background: $nav-color + 20;
+		cursor: pointer;
 	}
-
-
-		list-style: none;
-
+}
+.workListContainer {
+	:hover {
+		background: $hover-color - 20;
+	}
+}
+.skillContainer {
+	min-height: 15em;
 }

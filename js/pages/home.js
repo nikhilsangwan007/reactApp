@@ -32,7 +32,7 @@ class Home extends React.Component {
 	iterator(user, i) {
 				return (
 					<ul className="workList uk-margin-large-left uk-margin-large-right uk-margin-small-bottom" key={user.work[i].id}>
-						<li className="uk-text-xxlarge">{user.work[i].company}</li>
+						<li className="uk-text-xxlarge uk-text-truncate">{user.work[i].company}</li>
 						<li className="uk-text-small uk-text-uppercase uk-margin-small-bottom">{user.work[i].title}</li>
 						<li className="uk-text-small uk-text-uppercase"> description : {user.work[i].workDescription}</li>
 					</ul>

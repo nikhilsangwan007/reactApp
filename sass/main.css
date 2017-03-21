@@ -162,7 +162,6 @@
 .workList {
   font-size: 2em;
   color: white;
-  border-left: 3px solid white;
   border-bottom: 3px solid white;
   list-style: none; }
   .workList :hover {
@@ -195,14 +194,16 @@
   top: 80px;
   left: 0; }
 
+.leftBoxImg {
+  object-fit: cover;
+  cursor: pointer;
+  height: 100%; }
+
 .rightBox {
   position: relative;
   left: 45%;
   top: 80px;
   width: 55%;
   height: auto; }
-
-body {
-  background: #e4e4e4; }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,7 +5,7 @@ export default class Extra extends React.Component {
 		return (
 			<div>
 				<div className="leftBox">
-					<img src="../lib/uikit/tests/images/avatar.jpg"/>
+					<img className="leftBoxImg uk-animation-slide-right" src="../images/img2.jpg"/>
 				</div>
 				<div className="rightBox">
 					<h2>king</h2>

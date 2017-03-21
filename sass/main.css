@@ -1,3 +1,10 @@
+.navContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%; }
+
 .navBar {
   background: #1E88E5; }
 
@@ -6,7 +13,9 @@
 
 .profileBar {
   background: #1E88E5;
-  min-height: 40em; }
+  min-height: 45em;
+  position: relative;
+  top: 80px; }
 
 .profileImage {
   border-radius: 999px;
@@ -54,11 +63,25 @@
   .lastName {
     font-style: italic;
     font-size: 1.3em; } }
+.navContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%; }
+
 .navBar {
   background: #1E88E5; }
 
 .navbarMenuList li:hover {
   background: #1565C0; }
+
+.navContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%; }
 
 .navBar {
   background: #1E88E5; }
@@ -68,7 +91,9 @@
 
 .profileBar {
   background: #1E88E5;
-  min-height: 40em; }
+  min-height: 45em;
+  position: relative;
+  top: 80px; }
 
 .profileImage {
   border-radius: 999px;
@@ -117,7 +142,8 @@
     font-style: italic;
     font-size: 1.3em; } }
 .aboutContainer {
-  max-width: 95%; }
+  max-width: 95%;
+  background: white; }
 
 .aboutBrand, .experienceTag, .workList {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -131,21 +157,52 @@
 
 .workContainer {
   background: #1E88E5;
-  min-height: 15em; }
+  min-height: 20em; }
 
 .workList {
   font-size: 2em;
   color: white;
-  border: 1px solid white;
-  border-radius: 5px;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
   list-style: none; }
   .workList :hover {
     cursor: pointer; }
 
 .workListContainer :hover {
-  background: #0151ac; }
+  background: #2979d4; }
 
-.skillContainer {
-  min-height: 15em; }
+.projectContainer {
+  min-height: 15em;
+  background: white; }
+
+.navContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%; }
+
+.navBar {
+  background: #1E88E5; }
+
+.navbarMenuList li:hover {
+  background: #1565C0; }
+
+.leftBox {
+  width: 45%;
+  height: 100%;
+  position: fixed;
+  top: 80px;
+  left: 0; }
+
+.rightBox {
+  position: relative;
+  left: 45%;
+  top: 80px;
+  width: 55%;
+  height: auto; }
+
+body {
+  background: #e4e4e4; }
 
 /*# sourceMappingURL=main.css.map */

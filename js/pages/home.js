@@ -67,9 +67,9 @@ class Home extends React.Component {
 			        </div>
 	        	</div>
 				<section className="uk-animation-slide-bottom">
-					<div className="uk-container">
+					<div className="uk-container aboutContainer">
 			      		<img className="profileImage uk-align-center uk-margin-large-top" src="../lib/uikit/tests/images/avatar.jpg" width="300px" height="300px" />
-						<div className="uk-container aboutContainer uk-text-center">
+						<div className="uk-container uk-text-center">
 							<div className="uk-text-large uk-margin-small-top uk-margin-small-bottom aboutBrand">ABOUT ME</div>
 							<div className="uk-container uk-text-large aboutPara">
 								{this.userDescription()}
@@ -86,10 +86,10 @@ class Home extends React.Component {
 							</div>
 						</div> 
 					</div>
-					<div className="skillContainer uk-animation-slide-bottom">
+					<div className="projectContainer uk-animation-slide-bottom">
 						<div className="uk-grid">
 							<div className="uk-width-small-1-2 uk-push-1-2">
-								<h2 className="uk-text-uppercase uk-text-center uk-text-truncate uk-margin-small-top experienceTag">skills</h2>
+								<h2 className="uk-text-uppercase uk-text-center uk-text-truncate uk-margin-small-top experienceTag">projects</h2>
 							</div>
 						</div>
 					</div>

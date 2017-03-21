@@ -1,0 +1,16 @@
+@import "navbar";
+
+.leftBox {
+	width: 45%;
+	height: 100%;
+	position: fixed;
+	top: 80px;
+	left: 0;
+}
+.rightBox {
+	position: relative;
+	left: 45%;
+	top: 80px;
+	width: 55%;
+	height: auto;
+}

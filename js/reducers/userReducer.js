@@ -8,7 +8,7 @@ export default function() {
 			designation: "front end developer",
 			subtagLine: "Once upon a time, html falls in love with css",
 			tagLine: "Available for all type of frontend job oppurtunities",
-			description: "Nikhil Sangwan is a react developer, gamer and UI 1developer",
+			description: "Let me start with things i like most, i.e sketching, gaming and last but not the least web designing. I do sketching since my childhood and mainly draw anime and cartoon based sketches. I start gaming in college and a big fan of counter strike 1.6 and counter strike GO, also participated in several events and secure 1st rank in JSS college. I love web designing as much as i love my other hobbies. I love to design user interface and mainly works with Angularjs. I am highly motiveted about my career as web developer.",
 			work: 
 			[
 				{

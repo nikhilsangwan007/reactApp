@@ -1,7 +1,13 @@
 $nav-color: #1E88E5;
 $hover-color: #1565C0;
 
-
+.navContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
 .navBar {
 	background: $nav-color;
 }

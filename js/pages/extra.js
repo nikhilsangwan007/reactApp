@@ -4,7 +4,19 @@ export default class Extra extends React.Component {
 	render() {
 		return (
 			<div>
-				<h3>I am an extra page ^_^</h3>
+				<div className="leftBox">
+					<img src="../lib/uikit/tests/images/avatar.jpg"/>
+				</div>
+				<div className="rightBox">
+					<h2>king</h2>
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+				</div>
 			</div>
 		);
 	}

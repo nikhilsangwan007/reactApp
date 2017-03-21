@@ -2,6 +2,7 @@
 
 .aboutContainer {
 	max-width: 95%;
+	background: white;
 }
 .aboutBrand {
 	font-family: $font-family;
@@ -15,7 +16,7 @@
 }
 .workContainer {
 	background: $nav-color;
-	min-height: 15em;
+	min-height: 20em;
 }
 .experienceTag {
 	@extend .aboutBrand;
@@ -25,8 +26,8 @@
 	@extend .aboutBrand;
 	font-size: 2em;
 	color: white;
-	border: 1px solid white;
-	border-radius: 5px;
+	border-left: 3px solid white;
+	border-bottom: 3px solid white;
 	list-style: none;
 	:hover {
 		cursor: pointer;
@@ -34,9 +35,10 @@
 }
 .workListContainer {
 	:hover {
-		background: $hover-color - 20;
+		background: $hover-color + 20;
 	}
 }
-.skillContainer {
+.projectContainer {
 	min-height: 15em;
+	background: white;
 }

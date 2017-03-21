@@ -4,8 +4,8 @@
   "description": "react project",
   "main": "app.js",
   "scripts": {
-    "start": "webpack-dev-server --hot",
-    "deploy": "npm run build &&gh-pages -d build"
+  	"start": "webpack-dev-server --hot",
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "repository": {
     "type": "git",

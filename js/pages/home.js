@@ -81,7 +81,7 @@ class Home extends React.Component {
 							<div className="uk-width-small-1-2 uk-push-1-2">
 								<h2 className="uk-text-uppercase uk-text-center uk-text-truncate uk-margin-small-top experienceTag">experience</h2>
 							</div>
-							<div className="workListContainer uk-width-small-1-2 uk-pull-1-2 uk-margin-small-top uk-padding-remove">
+							<div className="workListContainer uk-width-small-1-2 uk-pull-1-2 uk-margin-small-top uk-margin-medium-bottom">
 									{this.work()}
 							</div>
 						</div> 

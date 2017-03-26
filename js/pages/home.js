@@ -57,7 +57,7 @@ class Home extends React.Component {
 			        <div className="uk-container uk-padding-remove uk-margin-large-left infoBox">
 			        	<h1 className="uk-text-uppercase uk-margin-medium uk-text-bold uk-animation-slide-bottom">
 			        		{this.designation()}
-			        	</h1>
+			        	</h1><hr className="designationDivider" />
 			        	<p className="uk-text-uppercase uk-margin-medium uk-animation-slide-bottom subtagLine">
 			        		{this.subtagLine()}
 			        	</p>

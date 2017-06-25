@@ -4,8 +4,10 @@
   "description": "react project",
   "main": "app.js",
   "scripts": {
-  	"start": "webpack-dev-server --hot",
-    "deploy": "npm run build&&gh-pages -d build"
+    "run": "webpack-dev-server --hot",
+    "deploy": "npm run build&&gh-pages -d build",
+    "start": "node server.js",
+    "postinstall": "webpack -p"
   },
   "repository": {
     "type": "git",
@@ -15,6 +17,7 @@
   "author": "nikhil sangwan",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.15.3",
     "flux": "^3.1.2",
     "history": "^1.17.0",
     "jquery": "^3.1.1",
